@@ -6,8 +6,6 @@ Khati QR (*khati* = "pure" in Bangla) is a demo for small food brands in Banglad
 
 **Live demo:** _coming soon_
 
-![Khati QR landing page](docs/home.png)
-
 > This is a demo. The seller ("Modhukunja Naturals"), batches, test results and scan numbers are made up.
 
 ## The problem
@@ -27,18 +25,12 @@ Khati QR (*khati* = "pure" in Bangla) is a demo for small food brands in Banglad
 | ⚠️ Possibly copied | The same jar number is scanned many times from many districts | A warning and a button to report it to the seller |
 | ❌ Not found | The code isn't in the seller's records | "This code is not from this seller" |
 
-![Buyer pages: genuine, possibly copied, not found](docs/buyer-pages.png)
-
 The buyer doesn't need an app. Any phone camera opens the page. The re-order button opens WhatsApp with the product and batch already filled in.
 
 ### For the seller
 
 - **Sticker maker:** enter the batch details once and print a sheet of QR stickers. Each sticker has its own jar number, which is how copied codes get caught.
 - **Dashboard:** scans this month, re-orders from the QR page, copy alerts, the cities where buyers scan from, and the latest scans.
-
-![Sticker maker](docs/label.png)
-
-![Seller dashboard](docs/dashboard.png)
 
 ## Pages
 
@@ -111,6 +103,3 @@ A version for a real seller adds:
 - A scan log per jar number. A copy alert fires when one jar is scanned too many times or from too many places.
 - Deployment on Vercel with the seller's own domain
 
-## About
-
-Built by **WebNest Studio**, Dhaka. Want this for your brand? Message us on [WhatsApp](https://wa.me/8801817618569) or on our [Facebook page](https://www.facebook.com/profile.php?id=61594388112794).
