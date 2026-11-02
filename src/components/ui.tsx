@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { KIND_STYLE, type Kind } from "@/lib/data";
-import { STUDIO, whatsappLink } from "@/lib/config";
+import { STUDIO, messengerLink } from "@/lib/config";
 
 export function Logo({ small = false }: { small?: boolean }) {
   return (
@@ -21,10 +21,10 @@ export function DemoStrip() {
     <div className="no-print bg-stone-900 px-4 py-2 text-center text-xs text-stone-200 sm:text-sm">
       Demo by <b className="text-white">{STUDIO.name}</b> · sample seller and made-up data{" "}
       <a
-        href={whatsappLink("Hi WebNest Studio, I want Khati QR for my products.")}
+        href={messengerLink("Hi WebNest Studio, I want Khati QR for my products.")}
         className="ml-2 inline-block rounded-full bg-green-500 px-3 py-0.5 font-semibold text-green-950"
       >
-        Want this? WhatsApp
+        Want this? Message us
       </a>
     </div>
   );

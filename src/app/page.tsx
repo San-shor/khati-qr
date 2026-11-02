@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { DemoStrip, Jar, Logo } from "@/components/ui";
-import { whatsappLink } from "@/lib/config";
+import { messengerLink } from "@/lib/config";
 
 const PAINS = [
   { bn: "\"আসল তো?\" প্রশ্নের শেষ নেই", en: "Every buyer asks if it's pure, and words don't prove it" },
@@ -13,7 +13,7 @@ const STEPS = [
   { t: "Add a batch", d: "Product, source, dates and test report. Takes 2 minutes." },
   { t: "Print QR stickers", d: "Each jar gets its own number. Stick one on every jar." },
   { t: "Buyer scans", d: "They see it's genuine, where it came from, and the test result." },
-  { t: "Re-order + alerts", d: "One tap to order again on WhatsApp. You get alerts if a QR is copied." },
+  { t: "Re-order + alerts", d: "One tap to order again on Messenger. You get alerts if a QR is copied." },
 ];
 
 const FOR = ["Honey", "Ghee", "Mustard oil", "Dates", "Tea", "Dried fish", "Organic rice", "Achar / pickles", "Spices", "Skin care"];
@@ -120,10 +120,10 @@ export default function Home() {
             Set up with your brand name, your products and your own link. Your buyers scan, trust, and order again.
           </p>
           <a
-            href={whatsappLink("Hi WebNest Studio, I saw the Khati QR demo. I sell ____. Can we talk?")}
+            href={messengerLink("Hi WebNest Studio, I saw the Khati QR demo. I sell ____. Can we talk?")}
             className="mt-6 inline-block rounded-2xl bg-green-400 px-7 py-3.5 font-semibold text-green-950"
           >
-            Talk on WhatsApp
+            Message us on Messenger
           </a>
         </div>
       </section>

@@ -25,7 +25,7 @@ Khati QR (*khati* = "pure" in Bangla) is a demo for small food brands in Banglad
 | ⚠️ Possibly copied | The same jar number is scanned many times from many districts | A warning and a button to report it to the seller |
 | ❌ Not found | The code isn't in the seller's records | "This code is not from this seller" |
 
-The buyer doesn't need an app. Any phone camera opens the page. The re-order button opens WhatsApp with the product and batch already filled in.
+The buyer doesn't need an app. Any phone camera opens the page. The re-order button opens Messenger with the product and batch already filled in.
 
 ### For the seller
 
@@ -89,7 +89,7 @@ src/
     ui.tsx                logo, demo strip, drawn jar
   lib/
     data.ts               sample seller and batches
-    config.ts             studio name and WhatsApp number
+    config.ts             studio name and Facebook page for Messenger
 ```
 
 To make it look like another brand, edit `src/lib/data.ts` and `src/lib/config.ts`.

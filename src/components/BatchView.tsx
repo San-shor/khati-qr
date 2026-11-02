@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import { BATCHES, SELLER, taka, type Batch } from "@/lib/data";
-import { whatsappLink } from "@/lib/config";
+import { messengerLink } from "@/lib/config";
 import { DemoStrip, Jar } from "./ui";
 
 export type Mode = "genuine" | "copied";
@@ -60,10 +60,10 @@ function Found({ batch, mode }: { batch: Batch; mode: Mode }) {
             times. Check the seal, and ask the seller before you eat it.
           </p>
           <a
-            href={whatsappLink(`Assalamualaikum. I scanned ${batch.code} jar #0${jarNo} and got a copy warning. Can you check?`, SELLER.phone)}
+            href={messengerLink(`Assalamualaikum. I scanned ${batch.code} jar #0${jarNo} and got a copy warning. Can you check?`, SELLER.page)}
             className="mt-3 block rounded-2xl bg-amber-950 py-3 text-center font-semibold text-white"
           >
-            Report to seller on WhatsApp
+            Report to seller on Messenger
           </a>
         </section>
       )}
@@ -143,10 +143,10 @@ function Found({ batch, mode }: { batch: Batch; mode: Mode }) {
 
       <div className="grid gap-2">
         <a
-          href={whatsappLink(`Assalamualaikum, I want to order again: ${batch.product} (${batch.size}). Batch ${batch.code}.`, SELLER.phone)}
+          href={messengerLink(`Assalamualaikum, I want to order again: ${batch.product} (${batch.size}). Batch ${batch.code}.`, SELLER.page)}
           className="rounded-2xl bg-green-600 py-3.5 text-center font-semibold text-white shadow-sm"
         >
-          আবার অর্ডার করুন · WhatsApp
+          আবার অর্ডার করুন · Messenger
         </a>
         <p className="text-center text-xs text-stone-500">
           {batch.reorders} people re-ordered from this page
@@ -185,10 +185,10 @@ function NotFound({ code }: { code: string }) {
           The product may be a fake using this brand name. Please don&apos;t eat it until you check with the seller.
         </p>
         <a
-          href={whatsappLink(`Assalamualaikum. I scanned a jar with code ${code} and it says not found. Is this your product?`, SELLER.phone)}
+          href={messengerLink(`Assalamualaikum. I scanned a jar with code ${code} and it says not found. Is this your product?`, SELLER.page)}
           className="mt-4 block rounded-2xl bg-stone-900 py-3 text-center font-semibold text-white"
         >
-          Ask the seller on WhatsApp
+          Ask the seller on Messenger
         </a>
       </section>
     </div>

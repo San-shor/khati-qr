@@ -32,7 +32,7 @@ export const SELLER = {
   nameBn: "মধুকুঞ্জ ন্যাচারালস",
   city: "Khulna",
   since: 2021,
-  phone: "8801817618569", // demo: goes to the studio WhatsApp
+  page: "61594388112794", // demo: goes to the studio Facebook page
 };
 
 export const BATCHES: Batch[] = [

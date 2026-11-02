@@ -42,7 +42,7 @@ export default function Page() {
         <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">
           <Stat label="QR scans (this month)" value={totalScans.toLocaleString("en-IN")} note="+18% vs last month" />
           <Stat label="Batches live" value={String(BATCHES.length)} note={`${BATCHES.reduce((s, b) => s + b.jars, 0)} jars out`} />
-          <Stat label="Re-orders from QR page" value={String(reorders)} note="via WhatsApp button" />
+          <Stat label="Re-orders from QR page" value={String(reorders)} note="via Messenger button" />
           <Stat label="Copy alerts" value="1" note="needs a look" alert />
         </div>
 
