@@ -26,6 +26,22 @@ body {
 }
 .pop-in { animation: pop-in 0.45s ease-out both; }
 
+/* Scan demo: line sweeping over the QR, small hand shake, spinner. */
+@keyframes scan-line {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(140px); }
+}
+.scan-line { animation: scan-line 1.4s ease-in-out infinite; }
+
+@keyframes cam-shake {
+  0%, 100% { transform: translate(0, 0) rotate(-1deg); }
+  50% { transform: translate(3px, -2px) rotate(1deg); }
+}
+.cam-shake { animation: cam-shake 0.9s ease-in-out infinite; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+.spin { animation: spin 0.7s linear infinite; }
+
 @media print {
   .no-print { display: none !important; }
   body { background: #fff; }

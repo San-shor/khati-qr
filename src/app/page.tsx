@@ -27,7 +27,7 @@ export default function Home() {
           <Logo />
           <span className="hidden text-sm text-stone-500 sm:inline">by WebNest Studio</span>
         </div>
-        <Link href="/b/MK-H-2610" className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white">
+        <Link href="/scan" className="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white">
           Scan a sample jar
         </Link>
       </header>
@@ -47,7 +47,7 @@ export default function Home() {
             and a warning if the code is fake or copied.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <Link href="/b/MK-H-2610" className="rounded-2xl bg-brand px-6 py-3.5 font-semibold text-white shadow-sm">
+            <Link href="/scan" className="rounded-2xl bg-brand px-6 py-3.5 font-semibold text-white shadow-sm">
               See what buyers see
             </Link>
             <Link href="/dashboard" className="rounded-2xl border border-stone-300 bg-white px-6 py-3.5 font-semibold">
